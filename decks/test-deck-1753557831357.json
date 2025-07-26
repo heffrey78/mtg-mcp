@@ -1,0 +1,18 @@
+{
+  "id": "test-deck-1753557831357",
+  "name": "Test Deck",
+  "format": "standard",
+  "colors": [
+    "R",
+    "U"
+  ],
+  "mainboard": [],
+  "sideboard": [],
+  "created_at": "2025-07-26T19:23:51.357Z",
+  "updated_at": "2025-07-26T19:23:51.357Z",
+  "metadata": {
+    "description": "Test description",
+    "author": "Test Author",
+    "version": 1
+  }
+}

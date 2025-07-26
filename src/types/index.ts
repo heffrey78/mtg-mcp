@@ -1,12 +1,12 @@
 export interface MTGCard {
   id: string;
   name: string;
-  mana_cost?: string;
+  mana_cost?: string | undefined;
   cmc: number;
   type_line: string;
-  oracle_text?: string;
-  power?: string;
-  toughness?: string;
+  oracle_text?: string | undefined;
+  power?: string | undefined;
+  toughness?: string | undefined;
   colors: string[];
   color_identity: string[];
   legalities: Record<string, string>;
@@ -14,10 +14,10 @@ export interface MTGCard {
   set_name: string;
   rarity: string;
   image_uris?: {
-    small?: string;
-    normal?: string;
-    large?: string;
-  };
+    small?: string | undefined;
+    normal?: string | undefined;
+    large?: string | undefined;
+  } | undefined;
 }
 
 export interface Deck {

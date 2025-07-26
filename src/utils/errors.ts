@@ -51,6 +51,16 @@ export class RulesEngineError extends MTGError {
   }
 }
 
+export function createErrorResponse(code: string, message: string, details?: unknown): ToolError {
+  return {
+    error: {
+      code,
+      message,
+      details
+    }
+  };
+}
+
 export function handleError(error: unknown): ToolError {
   logger.error('Error occurred', { error });
 
